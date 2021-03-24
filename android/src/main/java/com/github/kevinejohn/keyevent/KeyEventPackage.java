@@ -16,7 +16,6 @@ import java.util.List;
 public class KeyEventPackage implements ReactPackage {
     public KeyEventPackage() { }
 
-    @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(
             KeyEventModule.initKeyEventModule(reactContext)
@@ -28,7 +27,6 @@ public class KeyEventPackage implements ReactPackage {
       return Collections.emptyList();
     }
 
-    @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
